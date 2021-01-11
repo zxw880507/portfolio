@@ -68,10 +68,7 @@ a {
   transform: translate(-50%, -30%);
   width: 5.20833333rem;
 }
-.banner_wrap .banner_title span {
-  display: block;
-}
-.banner_wrap .banner_title span:nth-child(-n + 2) {
+.banner_wrap .banner_title h1 {
   width: 5.20833333rem;
   height: 0.51388889rem;
   font-size: 0.52083333rem;
@@ -80,7 +77,8 @@ a {
   font-weight: 400;
   margin: 0.2rem 0;
 }
-.banner_wrap .banner_title span:last-of-type {
+.banner_wrap .banner_title span {
+  display: block;
   width: 5.20833333rem;
   height: 0.125rem;
   margin-top: 0.06944444rem;

@@ -72,24 +72,22 @@ a {
     left: 50%;
     transform: translate(-50%, -30%);
     width: 750 / @size;
+    h1 {
+      width: 750 / @size;
+      height: 74 / @size;
+      font-size: 75 / @size;
+      color: #fff;
+      font-family: "raleway_thin";
+      font-weight: 400;
+      margin: 0.2rem 0;
+    }
     span {
       display: block;
-      &:nth-child(-n + 2) {
-        width: 750 / @size;
-        height: 74 / @size;
-        font-size: 75 / @size;
-        color: #fff;
-        font-family: "raleway_thin";
-        font-weight: 400;
-        margin: 0.2rem 0;
-      }
-      &:last-of-type {
-        width: 750 / @size;
-        height: 18 / @size;
-        margin-top: 10 / @size;
-        font-size: 18 / @size;
-        color: #fff;
-      }
+      width: 750 / @size;
+      height: 18 / @size;
+      margin-top: 10 / @size;
+      font-size: 18 / @size;
+      color: #fff;
     }
   }
 }
@@ -99,11 +97,11 @@ a {
   background: url(../uplaod/brand.jpg) no-repeat center 0;
   background-size: 1920 / @size auto;
   p {
-      font-size: 25 / @size;
-      color: #ffcdbe;
-      text-shadow: 1px 1px 10px #000000b8;
-      line-height: 40 / @size;
-      padding: 20 / @size;
+    font-size: 25 / @size;
+    color: #ffcdbe;
+    text-shadow: 1px 1px 10px #000000b8;
+    line-height: 40 / @size;
+    padding: 20 / @size;
   }
 }
 // BACKGROUND PIC1
@@ -445,37 +443,39 @@ footer {
           }
           &:nth-child(2) {
             i {
-              background: url(../img/plats1.png) no-repeat -167 / @size -12 / @size;
+              background: url(../img/plats1.png) no-repeat -167 / @size -12 /
+                @size;
               background-size: 700 / @size auto;
             }
           }
           &:nth-child(3) {
             i {
-              background: url(../img/plats1.png) no-repeat -354 / @size -12 / @size;
+              background: url(../img/plats1.png) no-repeat -354 / @size -12 /
+                @size;
               background-size: 700 / @size auto;
             }
           }
           &:nth-child(4) {
             margin: 0;
             i {
-              background: url(../img/plats1.png) no-repeat -525 / @size -12 / @size;
+              background: url(../img/plats1.png) no-repeat -525 / @size -12 /
+                @size;
               background-size: 700 / @size auto;
             }
           }
         }
         .contact {
-            a {
-                text-shadow: 1px 1px 5px #ffffff;
-                i {
-                    background-image: url(../img/plats2.png);
-                }
+          a {
+            text-shadow: 1px 1px 5px #ffffff;
+            i {
+              background-image: url(../img/plats2.png);
             }
+          }
         }
       }
     }
   }
 }
-
 
 // fixed topbar
 .fixed {
@@ -505,11 +505,11 @@ footer {
   background: rgba(255, 255, 255, 0.1);
 }
 .pink {
-    background: linear-gradient(90deg, #e8c9c0, transparent);
+  background: linear-gradient(90deg, #e8c9c0, transparent);
 }
 .green {
-    background: linear-gradient(90deg, #7abd8bcf, transparent);
+  background: linear-gradient(90deg, #7abd8bcf, transparent);
 }
 .blue {
-    background: linear-gradient(90deg, #99e9ffcc, transparent);
+  background: linear-gradient(90deg, #99e9ffcc, transparent);
 }
