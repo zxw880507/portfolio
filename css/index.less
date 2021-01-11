@@ -1,0 +1,515 @@
+@size: 144rem;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB",
+    "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun,
+    sans-serif;
+}
+body {
+  width: 1440 / @size;
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+// Head
+.top_wrap {
+  position: absolute;
+  width: 1440 / @size;
+  height: 75 / @size;
+  z-index: 10;
+  a {
+    color: #fff;
+  }
+  .topbar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1170 / @size;
+    height: 75 / @size;
+    .left {
+      float: left;
+      width: 59%;
+      height: 100%;
+      ul {
+        float: left;
+        height: 100%;
+        line-height: 75 / @size;
+        padding-left: 18 / @size;
+        li {
+          float: left;
+          font-size: 18 / @size;
+          box-sizing: content-box;
+          padding: 0 20 / @size;
+          margin: 0 12 / @size;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// Banner
+.banner_wrap {
+  position: relative;
+  width: 1440 / @size;
+  height: 600 / @size;
+  background-color: #a5ccd7;
+  background: url(../uplaod/top_banner.jpg) no-repeat center;
+  background-size: 1920 / @size auto;
+  text-align: center;
+  .banner_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 750 / @size;
+    span {
+      display: block;
+      &:nth-child(-n + 2) {
+        width: 750 / @size;
+        height: 74 / @size;
+        font-size: 75 / @size;
+        color: #fff;
+        font-family: "raleway_thin";
+        font-weight: 400;
+        margin: 0.2rem 0;
+      }
+      &:last-of-type {
+        width: 750 / @size;
+        height: 18 / @size;
+        margin-top: 10 / @size;
+        font-size: 18 / @size;
+        color: #fff;
+      }
+    }
+  }
+}
+.brand {
+  width: 1440 / @size;
+  height: 280 / @size;
+  background: url(../uplaod/brand.jpg) no-repeat center 0;
+  background-size: 1920 / @size auto;
+  p {
+      font-size: 25 / @size;
+      color: #ffcdbe;
+      text-shadow: 1px 1px 10px #000000b8;
+      line-height: 40 / @size;
+      padding: 20 / @size;
+  }
+}
+// BACKGROUND PIC1
+.bg1 {
+  width: 1440 / @size;
+  height: 600 / @size;
+  background: url(../uplaod/bg1_1600.jpg) no-repeat 50% 25 / @size;
+  background-attachment: fixed;
+}
+// QQfigure1
+.qfigure1 {
+  width: 1440 / @size;
+  height: 584 / @size;
+  background-image: linear-gradient(45deg, #e8c9c0cf, transparent);
+  .qcall {
+    position: relative;
+    width: 960 / @size;
+    height: 584 / @size;
+    margin: 0 auto;
+    .fig {
+      position: absolute;
+      left: -32 / @size;
+      bottom: 0;
+      width: 664 / @size;
+      height: 763 / @size;
+      background: url(../uplaod/pic1.png) no-repeat;
+      background-size: 664 / @size auto;
+    }
+    .text_wrap {
+      position: absolute;
+      right: 7 / @size;
+      top: 115 / @size;
+      width: 487 / @size;
+      h2 {
+        box-sizing: content-box;
+        width: 100%;
+        height: 0;
+        padding-top: 135 / @size;
+        font-size: 18 / @size;
+        overflow: hidden;
+        background: url(../uplaod/qcall_txt.png) no-repeat center;
+        background-size: 487 / @size auto;
+      }
+      p {
+        width: 100%;
+        margin-bottom: 12 / @size;
+        font-size: 18 / @size;
+        color: #333333;
+        text-align: right;
+        line-height: 25 / @size;
+        opacity: 0.5;
+        letter-spacing: 2 / @size;
+        a {
+          color: #ce7f69;
+        }
+      }
+      ul {
+        width: 100%;
+        height: 77 / @size;
+        box-sizing: content-box;
+        padding-top: 44 / @size;
+        font-size: 14 / @size;
+        color: #a0a0a0;
+        li {
+          float: right;
+          box-sizing: content-box;
+          text-align: center;
+          border-left: 1 / @size solid #e9e9e9;
+          span {
+            display: block;
+            width: 60 / @size;
+            height: 58 / @size;
+          }
+          &:nth-child(1) {
+            padding: 0 25 / @size 0;
+            span {
+              margin: 0 auto;
+              background: url(../img/qcall_figs.png) no-repeat -79 / @size 5 / @size;
+              background-size: 172 / @size auto;
+            }
+          }
+          &:nth-child(2) {
+            padding: 0 30 / @size 0;
+            border: none;
+            span {
+              margin: 0 auto;
+              background: url(../img/qcall_figs.png) no-repeat -3 / @size 5 / @size;
+              background-size: 172 / @size auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// BACKGROUND PIC2
+.bg2 {
+  width: 1440 / @size;
+  height: 600 / @size;
+  background: url(../uplaod/bg2_1600.jpg) no-repeat center;
+  background-attachment: fixed;
+}
+// QQfigure2
+.qfigure2 {
+  width: 1440 / @size;
+  height: 584 / @size;
+  background-image: linear-gradient(270deg, #5cdc5633, transparent);
+  .qcall {
+    position: relative;
+    width: 960 / @size;
+    height: 584 / @size;
+    margin: 0 auto;
+    .fig {
+      position: absolute;
+      right: -200 / @size;
+      bottom: 104 / @size;
+      width: 800 / @size;
+      height: 330 / @size;
+      background: url(../uplaod/pic2.png) no-repeat;
+      background-size: 800 / @size auto;
+    }
+    .text_wrap {
+      position: absolute;
+      left: 7 / @size;
+      top: 115 / @size;
+      width: 450 / @size;
+      h2 {
+        box-sizing: content-box;
+        width: 100%;
+        height: 0;
+        padding-top: 140 / @size;
+        font-size: 18 / @size;
+        overflow: hidden;
+        background: url(../uplaod/qcall_txt2.png) no-repeat left center;
+        background-size: 433 / @size auto;
+      }
+      p {
+        width: 100%;
+        margin-bottom: 12 / @size;
+        font-size: 18 / @size;
+        color: #333333;
+        text-align: left;
+        line-height: 25 / @size;
+        opacity: 0.5;
+        letter-spacing: 2 / @size;
+        a {
+          color: #39ad33e3;
+        }
+      }
+      ul {
+        width: 100%;
+        height: 77 / @size;
+        box-sizing: content-box;
+        padding-top: 44 / @size;
+        font-size: 14 / @size;
+        color: #a0a0a0;
+        li {
+          float: left;
+          box-sizing: content-box;
+          text-align: center;
+          padding: 0 22 / @size;
+          border-right: 1 / @size solid #e9e9e9;
+          span {
+            display: block;
+            width: 60 / @size;
+            height: 58 / @size;
+            margin: 0 auto;
+          }
+          &:nth-child(1) {
+            span {
+              background: url(../img/qfile_figs2.png) no-repeat 4 / @size 9 /
+                @size;
+              background-size: 240 / @size auto;
+            }
+          }
+
+          &:nth-child(2) {
+            span {
+              background: url(../img/qfile_figs2.png) no-repeat -151 / @size 9 /
+                @size;
+              background-size: 240 / @size auto;
+            }
+          }
+          &:nth-child(3) {
+            border: none;
+            span {
+              background: url(../img/qfile_figs2.png) no-repeat -77 / @size 9 / @size;
+              background-size: 240 / @size auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// BACKGROUND PIC3
+.bg3 {
+  width: 1440 / @size;
+  height: 600 / @size;
+  background: url(../uplaod/bg3_1600.jpg) no-repeat center;
+  background-attachment: fixed;
+}
+// QQfigure3
+.qfigure3 {
+  width: 1440 / @size;
+  height: 584 / @size;
+  background-image: linear-gradient(90deg, #a5ccd79c, transparent);
+  .qcall {
+    position: relative;
+    width: 960 / @size;
+    height: 584 / @size;
+    margin: 0 auto;
+    .fig {
+      position: absolute;
+      left: -80 / @size;
+      top: 50 / @size;
+      width: 600 / @size;
+      height: 500 / @size;
+      background: url(../uplaod/pic3.png) no-repeat -30 / @size 0;
+      background-size: 600 / @size auto;
+    }
+    .text_wrap {
+      position: absolute;
+      right: 7 / @size;
+      top: 115 / @size;
+      width: 495 / @size;
+      h2 {
+        box-sizing: content-box;
+        width: 100%;
+        height: 0;
+        padding-top: 135 / @size;
+        font-size: 18 / @size;
+        overflow: hidden;
+        background: url(../uplaod/qblog_txt3.png) no-repeat;
+        background-size: 488 / @size auto;
+      }
+      p {
+        width: 100%;
+        margin-bottom: 12 / @size;
+        font-size: 18 / @size;
+        color: #333333;
+        text-align: right;
+        line-height: 25 / @size;
+        opacity: 0.5;
+        letter-spacing: 2 / @size;
+        a {
+          color: #0db0de;
+        }
+      }
+      ul {
+        width: 100%;
+        height: 77 / @size;
+        box-sizing: content-box;
+        padding-top: 44 / @size;
+        font-size: 14 / @size;
+        color: #a0a0a0;
+        li {
+          float: right;
+          box-sizing: content-box;
+          text-align: center;
+          border-left: 1 / @size solid #e9e9e9;
+          span {
+            display: block;
+            margin: 0 auto;
+            width: 60 / @size;
+            height: 58 / @size;
+          }
+          &:nth-child(1) {
+            padding: 0 23 / @size 0;
+            span {
+              background: url(../img/qblog_figs3.png) no-repeat -107 / @size 4 /
+                @size;
+              background-size: 200 / @size auto;
+            }
+          }
+          &:nth-child(2) {
+            padding: 0 21 / @size;
+            border: none;
+            span {
+              width: 92 / @size;
+              background: url(../img/qblog_figs3.png) no-repeat 2 / @size 4 /
+                @size;
+              background-size: 200 / @size auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// footer
+footer {
+  width: 1440 / @size;
+  height: 300 / @size;
+  padding-top: 65 / @size;
+  background: linear-gradient(180deg, #99e9ffe6, #ffcdbe);
+  .foot_bd {
+    width: 960 / @size;
+    height: 205 / @size;
+    margin: 0 auto;
+
+    .plat {
+      float: left;
+      width: 100%;
+      padding-left: 8 / @size;
+      h3 {
+        height: 30 / @size;
+        font-size: 14 / @size;
+        color: #666666;
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        height: 150 / @size;
+        font-size: 14 / @size;
+
+        li {
+          float: left;
+          height: 100%;
+          text-align: center;
+          margin-right: 50 / @size;
+          a {
+            display: block;
+            color: #000000;
+            font-style: oblique;
+            font-size: 15 / @size;
+            i {
+              display: block;
+              width: 150 / @size;
+              height: 160 / @size;
+            }
+          }
+          &:nth-child(1) {
+            i {
+              background: url(../img/plats1.png) no-repeat 5 / @size -12 / @size;
+              background-size: 700 / @size auto;
+            }
+          }
+          &:nth-child(2) {
+            i {
+              background: url(../img/plats1.png) no-repeat -167 / @size -12 / @size;
+              background-size: 700 / @size auto;
+            }
+          }
+          &:nth-child(3) {
+            i {
+              background: url(../img/plats1.png) no-repeat -354 / @size -12 / @size;
+              background-size: 700 / @size auto;
+            }
+          }
+          &:nth-child(4) {
+            margin: 0;
+            i {
+              background: url(../img/plats1.png) no-repeat -525 / @size -12 / @size;
+              background-size: 700 / @size auto;
+            }
+          }
+        }
+        .contact {
+            a {
+                text-shadow: 1px 1px 5px #ffffff;
+                i {
+                    background-image: url(../img/plats2.png);
+                }
+            }
+        }
+      }
+    }
+  }
+}
+
+
+// fixed topbar
+.fixed {
+  position: fixed;
+  width: 1440 / @size;
+  height: 75 / @size;
+  background: linear-gradient(90deg, #e8c9c0, transparent);
+  z-index: 10;
+  .current {
+    background: #68676731;
+  }
+  a {
+    color: #00000087;
+  }
+  .topbar {
+    .left {
+      .logo {
+        a {
+          background: url(../img/logo@2x.png) no-repeat 6 / @size 16 / @size;
+          background-size: 91 / @size auto;
+        }
+      }
+    }
+  }
+}
+.current {
+  background: rgba(255, 255, 255, 0.1);
+}
+.pink {
+    background: linear-gradient(90deg, #e8c9c0, transparent);
+}
+.green {
+    background: linear-gradient(90deg, #7abd8bcf, transparent);
+}
+.blue {
+    background: linear-gradient(90deg, #99e9ffcc, transparent);
+}
